@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Threat Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="robot">
+            <div class="head"></div>
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+            <div class="body">
+                <div class="cloud">
+                    <div id="question"></div>
+                </div>
+            </div>
+            <div class="legs"></div>
+        </div>
+        <div id="quiz-container">
+            <div id="answers"></div>
+        </div>
+        <button id="next-button" onclick="loadQuestion()">Next</button>
+        <div id="feedback" class="feedback"></div>
+        <audio id="correct-sound" src="correct.mp3"></audio>
+        <audio id="incorrect-sound" src="incorrect.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
